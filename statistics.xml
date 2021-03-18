@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_button_white"
+        android:gravity="center"
+        android:text="Delete"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 Grade"
+                android:id="@+id/courseGrade"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course Title"
+                android:id="@+id/courseTitle"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textStyle="bold"/>
+
+
+         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 Divide"
+                android:id="@+id/courseDivide"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registered Personnel: 40/30"
+                android:id="@+id/coursePersonnel"
+                android:layout_gravity="center"
+                android:padding="2dp"
+                android:textColor="#000000"
+                android:textColorHint="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course Rate: 133%"
+                android:id="@+id/courseRate"
+                android:layout_gravity="center"
+                android:padding="2dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+</LinearLayout>

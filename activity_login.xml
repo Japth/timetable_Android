@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:orientation="vertical"
+            android:background="@color/colorBackground">
+
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp"
+                app:srcCompat="@drawable/app_logo_initial"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="수성컴퓨터학원"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="수강신청 도우미"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+               />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="ID"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:id="@+id/idText"
+            android:drawableStart="@drawable/ic_person_black_24dp"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorPrimary"/>
+
+        <EditText
+            android:inputType="textPassword"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="PASSWORD"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:id="@+id/passwordText"
+            android:drawableStart="@drawable/ic_https_black_24dp"
+            android:drawableLeft="@drawable/ic_https_black_24dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"/>
+
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@drawable/login_button"
+            android:text="LogIn"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/loginButton"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:text="Sign In"
+            android:id="@+id/registerButton"
+            android:textColor="@color/colorPrimaryDark"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:layout_gravity="center"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:drawableStart="@drawable/ic_live_help_black_24dp"
+                    android:drawableLeft="@drawable/ic_live_help_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:text=" Application Information"
+                    android:id="@+id/information"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        
+    </LinearLayout>
+
+</RelativeLayout>
